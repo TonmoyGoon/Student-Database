@@ -1,0 +1,23 @@
+<% layout("layout/boilerplate") %>
+
+<div class="col-md-6 offset-3">
+
+    <h1><%= student.name %></h1>
+    <h3>ID: <%= student.id %></h3>
+    <p>Batch: <%= student.batch %></p>
+    <p>Department: <%= student.dept %></p>
+    <p>Level: <%= student.level %></p>
+    <p>Term: <%= student.term %></p>
+    <p>Email: <%= student.email %></p>
+    <p>Address: <%= student.address %></p>
+    <p>Phone: +880<%= student.phone %></p>
+
+    <a href="/students/<%= batch %>/<%= dept %>/allstudentslist">&leftarrow; Back to All students</a><br>
+
+    <a href="/students/<%= batch %>/<%= dept %>/allstudentslist/<%= student._id %>/update"
+        class="btn btn-warning mt-3">Update info</a>
+
+    <form action="/students/<%= batch %>/<%= dept %>/allstudentslist/<%= student._id %>?_method=DELETE" method="post">
+        <button class="btn btn-danger mt-3">Delete</button>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+<% layout("layout/boilerplate") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+
+            <h1 style="color: red;">This page is under development</h1>
+            <div class="input-group my-5">
+                <input type="text" class="form-control" placeholder="Search by ID">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+
+            <form action="/students/selected" class="row g-3 mt-4" method="post">
+
+                <div class="mb-2">
+                    <label for="batch" class="form-label">Select a batch</label>
+                    <select class="form-select" id="batch" name="batch">
+                        <option selected>Open this select menu</option>
+                        <% for(let b of allBatch){ %>
+                        <option value="<%= b %>"><%= b %></option>
+                        <% } %>
+                    </select>
+                </div>
+
+
+                <div class="mb-2">
+                    <label for="dept" class="form-label">Select a department</label>
+                    <select class="form-select" id="dept" name="dept">
+                        <option selected>Open this select menu</option>
+                        <% for(let d of allDept){ %>
+                        <option value="<%= d %>"><%= d %></option>
+                        <% } %>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-primary my-3">Continue</button>
+
+            </form>
+
+            <div class="mt-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in pariatur, laborum harum error
+                    consequatur nihil a nostrum eum accusamus fugit similique numquam atque perferendis, incidunt totam
+                    explicabo quae molestiae!
+                    Accusantium aspernatur illo dolorem minima, molestiae necessitatibus, eveniet est ipsum ad neque
+                    nulla suscipit harum, repudiandae fugit obcaecati eos id cum. Animi, eius deserunt illum itaque
+                    laudantium illo quibusdam accusantium.
+                    Voluptatem itaque esse eum autem sed magnam! Nobis eligendi saepe vitae! Mollitia ad quo at porro in
+                    qui deleniti optio adipisci, odio ut repellendus cupiditate eveniet alias, obcaecati explicabo
+                    consectetur?</p>
+            </div>
+        </div>
+    </div>
+</div>

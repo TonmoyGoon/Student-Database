@@ -1,0 +1,11 @@
+<% layout("layout/boilerplate") %>
+
+<div class="container my-3">
+
+    <h1>All Students of Batch-<%= batch %> & Dept. <%= dept %></h1>
+    <a class="btn btn-info my-3" href="/students/<%= batch %>/<%= dept %>/allstudentslist/new">Add New Student</a>
+
+    <% for(let student of students){ %>
+    <li><a href="/students/<%= batch %>/<%= dept %>/allstudentslist/<%= student._id %>"><%= student.name %></a></li>
+    <% } %>
+</div>
