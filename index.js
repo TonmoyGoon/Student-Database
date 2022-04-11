@@ -86,17 +86,6 @@ app.get("/home", (req, res) => {
     res.render("home")
 })
 
-// Select page
-
-app.get("/students", catchAsync(async (req, res) => {
-    const students = await Student.find({});
-    res.render("students/select", { students, allBatch, allDept });
-}))
-
-app.post("/students/selected", catchAsync(async (req, res) => {
-    res.send(req.body);
-}))
-
 // Page not found
 app.all("*", (req, res, next) => {
     next(new appError("Page Not Found !!!!", 404));
