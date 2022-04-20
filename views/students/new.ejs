@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
     <div class="offset-3">
-        <h1>Creating a new students info (<%= dept %> - <%= batch %>)</h1>
+        <h1>Creating a new students info</h1>
         <form action="/students/<%= batch %>/<%= dept %>/allstudentslist" method="post" class="g-3 mt-4">
 
             <div class="row mb-4">
@@ -25,7 +25,8 @@
                     <select name="batch" id="batch" class="form-select">
                         <option>Open this select menu</option>
                         <% for(let b of allBatch){ %>
-                        <option value="<%= b %>" <%=student.batch ? "selected" : ""%>><%= b %></option>
+                        <option value="<%= b %>" <%=student.batch ? "selected" : "" %>><%= b %>
+                        </option>
                         <% } %>
                     </select>
                 </div>
@@ -35,7 +36,9 @@
                     <select name="dept" id="dept" class="form-select">
                         <option>Open this select menu</option>
                         <% for(let d of allDept){ %>
-                        <option value="<%= d %>"><%= d %></option>
+                        <option value="<%= d %>">
+                            <%= d %>
+                        </option>
                         <% } %>
                     </select>
                 </div>
@@ -48,7 +51,9 @@
                     <select name="level" id="level" class="form-select">
                         <option>Open this select menu</option>
                         <% for(let l of level){ %>
-                        <option value="<%= l %>"><%= l %> </option>
+                        <option value="<%= l %>">
+                            <%= l %>
+                        </option>
                         <% } %>
                     </select>
                 </div>
@@ -58,7 +63,9 @@
                     <select name="term" id="term" class="form-select">
                         <option>Open this select menu</option>
                         <% for(let t of term){ %>
-                        <option value="<%= t %>"><%= t %> </option>
+                        <option value="<%= t %>">
+                            <%= t %>
+                        </option>
                         <% } %>
                     </select>
                 </div>

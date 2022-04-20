@@ -83,7 +83,7 @@ app.use("/students/:batch/:dept/allstudentslist", studentRoutes);
 app.use("/", userRoutes);
 
 app.get("/home", (req, res) => {
-    res.render("home")
+    res.render("home", { allBatch, allDept });
 })
 
 // Page not found

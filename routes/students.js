@@ -12,7 +12,7 @@ const allBatch = [43, 44, 45, 46, 47];
 const allDept = ["ye", "fe", "wpe", "ae", "tem", "tfd", "ipe", "tmdm", "dce", "ese"];
 
 
-// Homepage
+// Index/Allstudents
 
 router.get("/", catchAsync(async (req, res) => {
     const { batch, dept } = req.params;
