@@ -15,8 +15,12 @@ router.post("/register", catchAsync(async (req, res) => {
         const { email, username, password } = req.body;
         const user = new User({ email, username });
         const registeredUser = await User.register(user, password);
-        req.flash("success", "Welcome to Student DB Website!!");
-        res.redirect("/home");
+        req.login(registeredUser, err => {            // Newly registered user to login automatically.
+            if (err) return next(err);
+            req.flash("success", "Welcome to Student DB Website!!");
+            res.redirect("/home");
+        })
+
     } catch (e) {
         req.flash("error", e.message)
         res.redirect("/register");
