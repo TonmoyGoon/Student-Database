@@ -49,31 +49,31 @@ Other tools: Passport.js (Authentication)
 
 ## How it works
 
-This is a CRUD application of a university(BUTEX) student database.Any person logged in with this application can use all the features of it.
+This is a **CRUD application of a university(BUTEX) student's database**.Any person logged in with this application can use all the features of it.
 
-Basically a student information is added according to his/her batch and department.For example: Say, You can see all the students list of (Batch-44 department-Apparel) in a page but for (Batch-45 department-Apparel) you can see all students list in another different page
+**Basically a student's information is added according to his/her batch and department**.For example: Say, You can see all the students list of (Batch-44 department-Apparel) in a page but for (Batch-45 department-Apparel) you can see all students list in another different page.
 
-One of the most important features is that the routes(See the address bar) are super dynamic.Whenever you are viewing all the students in a page you can observe the url with the same batch and department.For fabric-46 you can see "/students/46/fe/allstudentslist" in the url that means Batch-46 department-fabric and hopefully this is easy to understand.
+One of the most important features is that **the routes(See the address bar) are super dynamic.Whenever you are viewing all the students in a page you can observe the url with the same batch and department.For fabric-46 you can see "/students/46/fe/allstudentslist" in the url that means allstudents list of Batch-46 department-fabric and hopefully this is easy to understand.**
 
 
-Total Batch: 43-47
+**Total Batch: 43-47**
 
-All 10 departments are:
+**All 10 departments are:**
 
-1) Yarn Engineering (YE)
-2) Fabric Engineering (FE)
-3) Wet Processing Engineering (WPE)
-4) Apparel Engineering (AE)
-5) Textile Engineering Management (TEM)
-6) Textile Fashion and Design (TFD)
-7) Industrial and Production Engineering (IPE)
-8) Textile Machinery Design and Maintainence (TMDM)
-9) Dyes and Chemical Engineering (DCE)
-10) Environmental Science and Engineering (ESE)
+1) Yarn Engineering **(YE)**
+2) Fabric Engineering **(FE)**
+3) Wet Processing Engineering **(WPE)**
+4) Apparel Engineering **(AE)**
+5) Textile Engineering Management **(TEM)**
+6) Textile Fashion and Design **(TFD)**
+7) Industrial and Production Engineering **(IPE)**
+8) Textile Machinery Design and Maintainence **(TMDM)**
+9) Dyes and Chemical Engineering **(DCE)**
+10) Environmental Science and Engineering **(ESE)**
 
-For simplicity purpose I have used the short form of the departments like YE/FE and so on.
+For simplicity purpose **I have used the short form of the departments like YE/FE** and so on.
 
-Note: Whenever you click "Add student" on the navbar it will always redirect you to "/students/43/ye/allstudentslist/new" route.But by selecting proper batch and department in the main form you can add students on your desired place means on proper batch and department.
+**Note**: Whenever you click "Add student" on the navbar it will always redirect you to "/students/43/ye/allstudentslist/new" route.But by selecting proper batch and department in the main form you can add students on your desired place means on proper batch and department.
 
 Hopefully now you have the proper idea of the application. Now enjoy the application on the live link from Demo section.
 
